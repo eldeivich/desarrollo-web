@@ -1,0 +1,163 @@
+/** Selectores de id´s **/
+
+#titulo {
+  color: red;
+}
+#logo {
+/*  margin-top: 200px;*/
+}
+
+/* Selectores de clases */
+.rojo {
+  color: red;
+}
+.rojo{
+  color: blue;
+}
+.logo {
+  margin-top: 200px;
+}
+/*Selectores con clase y id */
+#titulo.titulo {
+  font-size: 60px;
+}
+.titulo {
+  font-size: 30px;
+}
+/* Selectores con 2 clases */
+.azul.tituloCurso {
+  color: blue;
+}
+.tituloCurso.azul {
+  color: red;
+}
+/* Selectores con elementos HTML */
+p {
+  color: brown;
+}
+h2 {
+  color: orange;
+}
+h3 {
+  color: green;
+}
+img {
+  width: 300px;
+}
+/* Selectores con elementos HTML y Id */
+img#logo {
+  width: 600px;
+}
+h2#titulo {
+  color: orange;
+}
+/* Selectores con elementos HTML y Clases */
+
+section.seccion {
+  background: gray;
+}
+div.noticia {
+  background: white;
+}
+/* Selector Universal */
+/*
+* {
+  color: black!important;
+  font-size: 20px!important;
+}*/
+
+#listado-cursos * {
+  font-size: 30px;
+}
+
+.noticia *{
+  font-size: 20px;
+}
+
+/* Seleccionando Grupos */
+
+h2, h3, p, a {
+  text-transform: uppercase;
+}
+h2, h3 {
+  text-align: center;
+}
+
+/* Selector descendiente */
+
+nav#navegacion {
+  background-color: orange;
+}
+nav#navegacion ul{
+  list-style: none;
+}
+nav#navegacion ul li {
+  display: inline;
+}
+nav#navegacion ul li a {
+  color: white;
+}
+/* Selector con hijos */
+section#cursos > ul {
+  border:1px solid black;
+}
+
+ul#listado-cursos > li {
+  color:red;
+}
+ul#listado-cursos li ul > li {
+  color: green;
+}
+/* Selector con elementos adyacentes */
+ul#listado-cursos + p {
+  background-color: red!important;
+  color: white;
+}
+/* Selectores para enlaces */
+a[href*="mundoplus.tv"] {
+  background-color: yellow;
+}
+a[href*="google.es"] {
+  background-color: purple;
+}
+/* Selectores de atributo */
+img[id="logo"] {
+  margin-top: 0;
+}
+[class="seccion"] {
+  background-color: blue!important;
+}
+/* Selectores con Pseudo Clases */
+div.menu nav ul li a:focus,
+div.menu nav ul li a:visited,
+div.menu nav ul li a:active {
+  color:black;
+}
+div.menu nav ul li:first-child a{
+    text-decoration: none;
+}
+div.menu nav ul li a:hover {
+  background-color: orange;
+}
+h2:hover {
+  color:orange!important;
+}
+/* Selectores con Pseudo Clases y NTH-CHILD */
+div.menu nav ul li:nth-child(1) {
+  background-color: red;
+}
+div.menu nav ul li:nth-child(2) {
+  background-color: yellow;
+}
+div.menu nav ul li:nth-child(3) {
+  background-color: purple;
+}
+div.menu nav ul li:nth-child(4) {
+  background-color: blue;
+}
+table tbody tr:nth-child(odd){
+  background-color: orange;
+}
+table tbody tr:nth-child(even) {
+  background-color: purple;
+}

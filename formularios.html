@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios y Campos</title>
+  </head>
+  <body>
+    <h2>Creando los formularios</h2>
+
+    <form class="formulario">
+      <fieldset>
+          <legend>Tus datos</legend>
+          <label for="nombre">Nombre:</label>
+
+          <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre" autocomplete="on" required>
+          <br><br>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" id="apellido" placeholder="Tu Apellido:" autocomplete="on" required>
+          <br>
+          <label for="sexo">Sexo:</label><br>
+          <input type="radio" id="sexo" name="sexo" value="hombre" checked autofocus>Hombre <br>
+          <input type="radio" id="sexo" name="sexo" value="Mujer">Mujer <br>
+          <input type="radio" id="sexo" name="sexo" value="Otro">Otro <br>
+          <br><br>
+          <label>Fecha de Cumpleaños</label>
+          <input type="date" name="fecha">
+          <input type="datetime-local" name="fecha">
+          <input type="datetime" name="fecha">
+          <br><br>
+          <label>Correo electronico</label>
+          <input type="email" name="email" placeholder="correo@dominio.com" required>
+          <br><br>
+          <label>Tu sitio web</label>
+          <input type="url" name="sitioweb" placeholder="http://www.dominio.com">
+          <br><br>
+          <label>Cuanto sabes de HTML</label>
+          <input type="range" name="puntaje" min="0" max="10">
+          <br><br>
+          <label>Personas que vienen contigo: </label>
+          <input type="number" name="cantidad" min="1" max="5">
+
+      </fieldset>
+        <br>
+        <br>
+
+      <fieldset>
+          <legend>Información sobre tu curso</legend>
+            <label id="turno">Turno: </label>
+            <select id="turno" class="turno" name="turno">
+              <option value="matutino">Matutino</option>
+              <option value="vespertino" selected>Vespertino</option>
+              <option value="nocturno">Nocturno</option>
+            </select>
+            <br><br>
+
+            <label>¿Que curso te gustaría que agregaramos?</label>
+            <input list="propuesta" name="encuesta">
+            <datalist id="propuesta"><!--No me gusta como queda-->
+              <option value="jQuery">
+              <option value="Aplicaciones Web">
+              <option value="AngularJS">
+              <option value="Bootstrap">
+            </datalist><!--No me gusta como queda-->
+            <br><br>
+
+            <label>Elige tus cursos:</label><br>
+            <input type="checkbox" name="curso" value="php">PHP <br>
+            <input type="checkbox" name="curso" value="html5">HTML5 <br>
+            <input type="checkbox" name="curso" value="css">CSS <br>
+            <input type="checkbox" name="curso" value="mysql">MySQL <br>
+            <input type="checkbox" name="curso" value="javascript">JavaScript <br>
+            <input type="checkbox" name="curso" value="jquery">jQuery <br>
+
+            <br>
+            <label>Fecha en la que deseas comnezar el curso</label>
+            <input type="month" name="fecha"><br>
+            <input type="time" name="fecha"><br>
+            <input type="week" name="fecha">
+      </fieldset>
+        <br>
+      <fieldset>
+        <legend>Extra</legend>
+        <label>Las primeras 10 personas reciben una camiseta gratis, elige el color</label>
+        <input type="color" name="color" value="">
+      </fieldset>
+
+        <br>
+      <fieldset>
+        <legend>Usuario y Password:</legend>
+        <label>Usuario:</label><br>
+        <input type="text" name="usuario" placeholder="Usuario"><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="Password"required><br>
+      </fieldset>
+
+
+
+        <br>
+      <button type="reset" disabled>Borrar</button>
+      <input type="submit"value="Enviar">
+
+    </form>
+  </body>
+</html>
