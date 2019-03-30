@@ -1,8 +1,12 @@
 $(function() {
   'use strict';
-    
+
+  $('aside').load('promociones.html');
+
+
+  /*
 $('div.logo img').on('click', cargarAjax);
-    
+
 function cargarAjax() {
     $.ajax('promociones.txt', {
         success: agregarContenido,
@@ -10,12 +14,12 @@ function cargarAjax() {
         datatype:'text'
     });
 }
-    
+
 function agregarContenido(data, status, jqxhr){
     $('aside').text(data);
     console.log(status);
-}
-    
+}*/
+
 
 /* Esta es superior *//*
 $('.logo img').click(function() {
